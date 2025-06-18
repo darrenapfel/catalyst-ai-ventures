@@ -1,8 +1,8 @@
 # Current Status - Catalyst AI Ventures
 
-**Last Updated**: June 18, 2025  
+**Last Updated**: June 18, 2025 (Updated)  
 **Current Phase**: Phase 0 - Setup ✅ COMPLETE  
-**Next Phase**: Phase 1 - Opportunity Discovery (READY TO BEGIN)
+**Next Phase**: Phase 1 - Opportunity Discovery (STRATEGY UPDATED)
 
 ## Completed Milestones
 
@@ -20,6 +20,7 @@
 - [x] **NEW**: Defined all 6 personas including Opportunity Scout
 - [x] **NEW**: Created Claude CODE automation scripts
 - [x] **NEW**: Clarified B2B AND B2C opportunities
+- [x] **LATEST**: Updated Phase 1 strategy for hybrid Research + CODE approach
 - [x] Total cost so far: $0
 
 ## Critical Framework Refinements (June 18)
@@ -80,18 +81,26 @@ Consumer products often fit our model better (self-serve, viral growth, no sales
 - [x] B2B/B2C opportunities clarified
 - [ ] Ready to begin market research
 
+## Phase 1 Strategy Update (IMPORTANT)
+
+**Hybrid Approach**: Research + Automation
+1. **Step 1**: Use Claude.ai/Desktop with Research to generate proposal (Chief Product Officer)
+2. **Step 2**: Use Claude CODE to run adversarial evaluation automatically
+
+This solves the limitation where Research feature is only available in Claude.ai, not CODE.
+
 ## Next Actions (Phase 1)
 
-1. **Run Adversarial Ideation**:
+1. **Generate Product Proposal** (Darren using Claude.ai):
+   - Use Chief Product Officer prompt with Research capability
    - Generate 10+ ideas (mix of B2B and B2C)
-   - Option A: Use Claude CODE with `python run_adversarial.py`
-   - Option B: Use quick template for 1-hour session
-   - Option C: Run full 7-hour sequential process
+   - Save to `phases/phase-1/proposal-YYYYMMDD-HHMM.md`
 
-2. **Process Results**:
+2. **Run Adversarial Evaluation** (Claude CODE):
+   - Run: `python tools/adversarial_evaluation.py phases/phase-1/proposal-YYYYMMDD-HHMM.md`
+   - Automated evaluation by 5 adversarial personas
    - 3-5 surviving ideas proceed to deep research
-   - Document why ideas were killed
-   - Identify patterns in successes
+   - Auto-generated report with patterns and insights
 
 3. **Deep Research** on survivors:
    - TAM calculations
@@ -126,8 +135,10 @@ Consumer products often fit our model better (self-serve, viral growth, no sales
 - `/docs/strategy/six-personas-and-automation.md` - Full system design
 
 ### Automation Tools
-- `/tools/adversarial_ideation.py` - Full multi-agent system (B2B + B2C)
+- `/tools/adversarial_ideation.py` - Original full system (deprecated)
+- `/tools/adversarial_evaluation.py` - NEW: Evaluates proposals from Claude.ai
 - `/tools/run_adversarial.py` - Simplified automation (B2B + B2C)
+- `/docs/strategy/phase1-execution-strategy.md` - Updated hybrid approach
 - Templates for manual execution
 
 ### Decision Documents
