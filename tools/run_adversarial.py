@@ -21,12 +21,28 @@ As the Opportunity Scout (Chief Product Officer), generate 10 business ideas tha
 - Can be built/run by AI (Claude CODE)
 - <$1000 to launch
 - <15 hrs/week human time
-- $30-150/month SaaS pricing
+- $30-150/month subscription pricing
+
+Generate a mix of B2B and B2C opportunities:
+
+B2B Examples:
+- Tools for solopreneurs/creators
+- Niche automation for specific industries
+- Workflow tools for remote teams
+- Specialized analytics platforms
+
+B2C Examples:
+- Fitness/wellness apps for specific demographics
+- Learning tools for niche subjects
+- Entertainment for underserved audiences
+- Personal finance for life transitions
+- Dating/social for specific communities
+- Creative tools for specific use cases
 
 Format each idea as:
 NAME: [Product name]
 TAGLINE: [One-line pitch]
-TARGET: [Specific customer]
+TARGET: [Specific customer - B2B or B2C]
 PROBLEM: [What it solves]
 SOLUTION: [How it works]
 PRICE: [$/month]
@@ -138,7 +154,8 @@ def one_shot_adversarial():
     """Ultra-simple one-shot prompt"""
     
     return """
-Generate 10 AI-operated business ideas (no sales team, <$1000 to launch, self-serve SaaS).
+Generate 10 AI-operated business ideas (no sales team, <$1000 to launch, self-serve subscription).
+Include both B2B (tools for businesses/creators) and B2C (consumer apps).
 
 Then score each idea 1-10 as:
 - Investor (economics)
