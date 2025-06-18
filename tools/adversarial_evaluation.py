@@ -129,9 +129,11 @@ class SkepticalInvestor:
         pricing = idea.get('pricing', '').lower()
         if any(x in pricing for x in ['$100', '$150', '$200']):
             score += 2  # Higher price points are better
-        elif any(x in pricing for x in ['$10', '$15', '$20']):
+        elif any(x in pricing for x in ['$5', '$7']):
             score -= 2
             concerns.append("Price point too low for sustainable unit economics")
+        elif '$9.99' in pricing and 'B2C' in market_type:
+            score -= 1  # Acceptable for B2C but not ideal
             
         # Check for clear target market
         if len(idea.get('target_customer', '')) < 20:
@@ -270,11 +272,11 @@ class TechnicalRealist:
         solution = idea.get('solution', '').lower()
         
         # Check for technically complex features
-        hard_features = ['video', 'voice', 'real-time collaboration', 'mobile app', 
-                        'native app', 'hardware', 'iot', 'blockchain', 'vr', 'ar']
+        hard_features = ['video processing', 'voice recognition', 'real-time collaboration', 'mobile app', 
+                        'native app', 'hardware', 'iot', 'blockchain', ' vr ', ' ar ', 'augmented reality']
         
         for feature in hard_features:
-            if feature in solution:
+            if feature in solution.lower():
                 fatal_flaws.append(f"Cannot build {feature} features with current stack")
                 
         # Check for data/ML requirements
@@ -338,7 +340,8 @@ class MarketAnalyst:
             score += 1
             
         # Check for venture-backed competition indicators
-        if any(x in idea.get('solution', '').lower() for x in ['crm', 'project management', 'scheduling', 'accounting']):
+        solution_lower = idea.get('solution', '').lower()
+        if any(x in solution_lower for x in ['crm', 'project management tool', 'general scheduling', 'accounting software']):
             fatal_flaws.append("Category dominated by funded competitors")
             
         verdict = "KILL" if fatal_flaws or score < 4 else "PROCEED"
@@ -443,8 +446,8 @@ class AdversarialEvaluator:
                 result['kill_reason'] = evaluation['fatal_flaws'][0]
                 break
         
-        # Check minimum score threshold (30/50 = 60%)
-        if result['verdict'] == 'PROCEED' and result['total_score'] < 30:
+        # Check minimum score threshold (25/50 = 50%)
+        if result['verdict'] == 'PROCEED' and result['total_score'] < 25:
             result['verdict'] = 'KILL'
             result['killed_by'] = 'Low Score'
             result['kill_reason'] = f"Total score {result['total_score']}/50 below threshold"
