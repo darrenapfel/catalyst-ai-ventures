@@ -80,8 +80,10 @@ These 12 principles guide every decision and define what types of businesses we 
 Businesses that meet our constitution typically share these characteristics:
 
 - **Market**: $100M-$1B TAM with fragmented competition
-- **Customer**: Tech-comfortable but underserved by current solutions
-- **Product**: Can be built as SaaS with recurring revenue
+- **Customer Types**: Both B2B and B2C opportunities
+  - **B2B**: Tech-comfortable businesses, solopreneurs, creators
+  - **B2C**: Underserved consumer segments with specific needs
+- **Product**: Can be built as subscription service (SaaS or consumer app)
 - **Operations**: Automatable customer journey end-to-end
 - **Growth**: Organic/viral potential, not dependent on ads
 - **Moat**: Network effects, data advantages, or AI capabilities
@@ -126,6 +128,21 @@ Using Claude Desktop's Research feature, we'll:
 3. **Constitution Scoring**: Rate each opportunity against our 12 principles
 4. **TAM Calculation**: Size markets using bottom-up analysis
 5. **Competition Mapping**: Identify weaknesses in existing solutions
+
+#### Target Market Examples
+**B2B Opportunities**:
+- Tools for solopreneurs/creators
+- Niche automation for specific industries
+- Workflow tools for remote teams
+- Specialized analytics platforms
+
+**B2C Opportunities**:
+- Fitness apps for specific demographics
+- Learning tools for niche subjects
+- Entertainment for underserved audiences
+- Personal finance for life transitions
+- Dating/social for specific communities
+- Productivity for specific use cases
 
 #### Adversarial Ideation System
 
@@ -325,7 +342,7 @@ Balanced approach with validation:
 - [ ] Set up minimal tools (Zapier, email)
 
 #### Weeks 2-3: Discovery (Claude Desktop)
-- [ ] Research 10+ market opportunities
+- [ ] Research 10+ market opportunities (both B2B and B2C)
 - [ ] Score against 12 principles
 - [ ] Deep dive on top 5 concepts
 - [ ] Document TAM and competition
