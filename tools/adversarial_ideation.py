@@ -28,24 +28,34 @@ class OpportunityScout:
         - Can be built/operated by AI (Claude + Claude CODE)
         - Clear path to profit with <$1000 investment
         - <15 hours/week human time after launch
-        - SaaS model ($30-150/month price point)
+        - Subscription model ($30-150/month price point)
         
-        Focus on:
+        Generate a mix of B2B and B2C opportunities:
+        
+        B2B Focus Areas:
         - Tools for solopreneurs/creators
         - Niche B2B automation
-        - "Uber for X" concepts applied to new markets
+        - Workflow tools for remote teams
         - Problems currently solved with spreadsheets
-        - Demographic-specific pain points
+        
+        B2C Focus Areas:
+        - Fitness/wellness apps for specific demographics
+        - Learning tools for niche subjects
+        - Entertainment for underserved audiences
+        - Personal finance for life transitions
+        - Dating/social for specific communities
+        - Creative tools for specific use cases
         
         For each idea, provide:
         1. name: Catchy product name
         2. tagline: One-line pitch
-        3. target_customer: Specific user persona
-        4. problem: What painful problem it solves
-        5. solution: How it solves it uniquely
-        6. pricing: Suggested monthly price
-        7. why_now: Why this is timely
-        8. moat: What makes it defensible
+        3. market_type: B2B or B2C
+        4. target_customer: Specific user persona
+        5. problem: What painful problem it solves
+        6. solution: How it solves it uniquely
+        7. pricing: Suggested monthly price
+        8. why_now: Why this is timely
+        9. moat: What makes it defensible
         """
         
         # In Claude CODE, this would actually call Claude's API
@@ -53,7 +63,7 @@ class OpportunityScout:
         ideas = []
         
         # This is where Claude CODE would generate real ideas
-        print(f"🔍 Opportunity Scout: Generating {count} ideas...")
+        print(f"🔍 Opportunity Scout: Generating {count} ideas (B2B and B2C)...")
         
         return ideas
 
@@ -79,6 +89,9 @@ class SkepticalInvestor:
         3. Customer acquisition cost vs lifetime value?
         4. Why won't this become a zombie business?
         
+        For B2C: Consider higher churn rates and lower price points
+        For B2B: Consider longer sales cycles but higher retention
+        
         Return:
         - score: 1-10 (7+ means investable)
         - fatal_flaws: List any deal-breakers
@@ -86,7 +99,7 @@ class SkepticalInvestor:
         - verdict: KILL or PROCEED
         """
         
-        print(f"🎯 Skeptical Investor: Evaluating {idea['name']}...")
+        print(f"🎯 Skeptical Investor: Evaluating {idea.get('name', 'idea')}...")
         
         # Evaluation logic here
         return {
@@ -121,7 +134,7 @@ class BurnedEntrepreneur:
         Be ruthlessly pessimistic based on experience.
         """
         
-        print(f"💀 Burned Entrepreneur: Evaluating {idea['name']}...")
+        print(f"💀 Burned Entrepreneur: Evaluating {idea.get('name', 'idea')}...")
         
         return {
             "score": 0,
@@ -155,7 +168,7 @@ class TargetCustomer:
         Be honest - you're busy and skeptical of new tools.
         """
         
-        print(f"👤 Target Customer: Evaluating {idea['name']}...")
+        print(f"👤 Target Customer: Evaluating {idea.get('name', 'idea')}...")
         
         return {
             "score": 0,
@@ -189,7 +202,7 @@ class TechnicalRealist:
         Focus on what's ACTUALLY buildable with our constraints.
         """
         
-        print(f"🔧 Technical Realist: Evaluating {idea['name']}...")
+        print(f"🔧 Technical Realist: Evaluating {idea.get('name', 'idea')}...")
         
         return {
             "score": 0,
@@ -223,7 +236,7 @@ class MarketAnalyst:
         Name specific companies and failures.
         """
         
-        print(f"📊 Market Analyst: Evaluating {idea['name']}...")
+        print(f"📊 Market Analyst: Evaluating {idea.get('name', 'idea')}...")
         
         return {
             "score": 0,
@@ -266,9 +279,9 @@ class AdversarialOrchestrator:
             self.results.append(result)
             
             if result['verdict'] == 'KILL':
-                print(f"❌ {idea['name']} - KILLED by {result['killed_by']}")
+                print(f"❌ {idea.get('name', 'Unnamed')} - KILLED by {result['killed_by']}")
             else:
-                print(f"✅ {idea['name']} - SURVIVED (Score: {result['total_score']}/50)")
+                print(f"✅ {idea.get('name', 'Unnamed')} - SURVIVED (Score: {result['total_score']}/50)")
         
         # Phase 3: Generate Report
         report = self._generate_report()
@@ -336,10 +349,11 @@ Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
         
         for i, result in enumerate(survivors, 1):
             idea = result['idea']
-            report += f"""### {i}. {idea['name']}
-**Tagline**: {idea['tagline']}
-**Target**: {idea['target_customer']}
-**Price**: {idea['pricing']}/month
+            report += f"""### {i}. {idea.get('name', 'Unnamed')}
+**Type**: {idea.get('market_type', 'Unknown')}
+**Tagline**: {idea.get('tagline', 'No tagline')}
+**Target**: {idea.get('target_customer', 'Unknown')}
+**Price**: {idea.get('pricing', 'TBD')}/month
 **Score**: {result['total_score']}/50
 
 **Strengths**:
@@ -355,7 +369,7 @@ Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
         
         for result in killed:
             idea = result['idea']
-            report += f"- **{idea['name']}**: Killed by {result['killed_by']} - \"{result['kill_reason']}\"\n"
+            report += f"- **{idea.get('name', 'Unnamed')}** ({idea.get('market_type', 'Unknown')}): Killed by {result['killed_by']} - \"{result['kill_reason']}\"\n"
         
         # Add patterns and insights
         report += self._analyze_patterns()
@@ -366,10 +380,20 @@ Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
         """Identify patterns in failures and successes"""
         
         kill_reasons = {}
+        b2b_killed = 0
+        b2c_killed = 0
+        
         for result in self.results:
-            if result['verdict'] == 'KILL' and result['killed_by']:
-                killer = result['killed_by']
-                kill_reasons[killer] = kill_reasons.get(killer, 0) + 1
+            if result['verdict'] == 'KILL':
+                if result['killed_by']:
+                    killer = result['killed_by']
+                    kill_reasons[killer] = kill_reasons.get(killer, 0) + 1
+                
+                market_type = result['idea'].get('market_type', '')
+                if market_type == 'B2B':
+                    b2b_killed += 1
+                elif market_type == 'B2C':
+                    b2c_killed += 1
         
         patterns = "\n## Patterns & Insights\n\n"
         patterns += "### Failure Patterns\n"
@@ -377,11 +401,17 @@ Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
         for killer, count in sorted(kill_reasons.items(), key=lambda x: x[1], reverse=True):
             patterns += f"- {killer}: Killed {count} ideas\n"
         
+        if b2b_killed > 0 or b2c_killed > 0:
+            patterns += f"\n### Market Type Analysis\n"
+            patterns += f"- B2B ideas killed: {b2b_killed}\n"
+            patterns += f"- B2C ideas killed: {b2c_killed}\n"
+        
         patterns += "\n### Success Patterns\n"
         patterns += "- Ideas that survived typically had:\n"
         patterns += "  - Clear, specific target audience\n"
         patterns += "  - Simple technical implementation\n"
         patterns += "  - Existing demand with no good solution\n"
+        patterns += "  - Realistic operational requirements\n"
         
         return patterns
     
