@@ -25,6 +25,20 @@ Using Claude CODE and cutting-edge tools, we can:
 
 Our venture represents a fundamental shift from "AI-assisted" to "AI-led" business operations. This isn't about using AI as a tool - it's about AI as a true business partner.
 
+#### Critical Distinction: AI-Led Operations vs AI Products
+
+**AI-Led Operations** means Claude and Claude CODE run the business:
+- Claude serves as CEO making strategic decisions
+- Claude CODE handles all engineering, testing, and deployment
+- AI manages marketing, support, and operations
+
+**Product Flexibility** - The product itself can be:
+- **AI-First**: Core value comes from AI capabilities (e.g., AI writing assistant)
+- **AI-Enhanced**: Traditional product with AI features (e.g., project management with AI insights)
+- **Zero AI**: No AI in the product at all (e.g., simple SaaS tool)
+
+The key is that AI runs the business, not that the business sells AI.
+
 #### Claude as Co-CEO
 
 Claude serves as an autonomous partner responsible for:
@@ -48,10 +62,10 @@ The human partner provides:
 
 These 12 principles guide every decision and define what types of businesses we build:
 
-1. **Self-Serve Experience**: Intuitive, zero-touch customer journey
-2. **Frugal Marketing**: High-ROI acquisition without sales teams
-3. **Underserved Audiences**: Niches ignored by major players
-4. **Unique Value Delivery**: Solving real problems in new ways
+1. **Self-Serve Experience**: Intuitive, zero-touch customer journey with no human sales team. Growth through product-led adoption only.
+2. **Frugal Marketing**: Organic growth + algorithmic marketing only. No human sales, no cold outreach, no manual demos.
+3. **Underserved Audiences**: Niches with unmet demand and no adequate substitutes. Avoid crowded markets even if fragmented.
+4. **Unique Value Delivery**: Novel solutions where no adequate substitute exists. OK to transpose successful concepts to new markets (e.g., 'Uber for X')
 5. **Platform Architecture**: Reusable core for multiple products
 6. **Self-Optimizing Systems**: Continuous improvement from all signals
 7. **Global by Design**: Localizable from day one
@@ -112,6 +126,30 @@ Using Claude Desktop's Research feature, we'll:
 3. **Constitution Scoring**: Rate each opportunity against our 12 principles
 4. **TAM Calculation**: Size markets using bottom-up analysis
 5. **Competition Mapping**: Identify weaknesses in existing solutions
+
+#### Adversarial Ideation System
+
+To combat Claude's natural agreeability and ensure rigorous vetting, we employ multiple personas:
+
+**The Adversarial Team**:
+1. **The Skeptical Investor** 🎯 - Challenges unit economics, TAM, and scalability
+2. **The Burned Entrepreneur** 💀 - Spots operational pitfalls from experience
+3. **The Target Customer** 👤 - Questions value props and switching costs
+4. **The Technical Realist** 🔧 - Challenges feasibility and maintenance burden
+5. **The Market Analyst** 📊 - Deep competitor knowledge, questions differentiation
+
+**Process**:
+```
+Idea Generation → Adversarial Review → Synthesis
+├── Optimistic Claude generates 10+ ideas
+├── Each persona ruthlessly critiques
+├── Four rounds of structured challenges:
+│   ├── Fatal flaws (kill bad ideas fast)
+│   ├── Hidden complexities
+│   ├── Market realities
+│   └── Operational challenges
+└── Only battle-tested ideas survive
+```
 
 #### Tools & Costs
 | Purpose | Solution | Cost | Why This Choice |
