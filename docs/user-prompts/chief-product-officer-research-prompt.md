@@ -17,6 +17,13 @@ CONTEXT:
 - These ideas will go through RUTHLESS adversarial evaluation (expect <10% survival rate)
 - Only exceptional ideas should be proposed
 
+IMPORTANT PRE-READ:
+You must read /docs/framework/claude-first-business-framework.md All proposals must deeply embody:
+- Our vision
+- Our execution approach
+- Our AI-led paradigm
+- Our business constitution
+
 RESEARCH REQUIREMENTS:
 Use your Research capability to validate each idea addresses a real market need with current evidence.
 
