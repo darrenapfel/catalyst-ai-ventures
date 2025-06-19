@@ -39,10 +39,17 @@ If the interactive script has issues, Claude can manually run the adversarial ev
    - Provide brutal, specific criticism from each persona's perspective
    - Synthesize whether idea should be: STRONG_PASS, BORDERLINE_PIVOT, or HOPELESS_KILL
    - For BORDERLINE_PIVOT: extract insights, redesign concept, re-evaluate
+3. **Generate comprehensive outputs**:
+   - Main evaluation report with executive summary
+   - Full persona transcripts as appendix
+   - Update master tracker JSON
+   - Update portfolio pipeline metrics
 
 ## Target Outcome
 - **<10% survival rate** (expect 0-2 survivors from 10+ ideas)
-- **Auto-generated reports** in `phases/phase-1/evaluation-YYYYMMDD-HHMMSS-*`
+- **Comprehensive evaluation report** in `phases/phase-1/evaluation-YYYYMMDD-adversarial-results.md`
+- **Full persona transcripts** included as appendix in evaluation report
+- **Master tracker update** in `phases/phase-1/evaluation-master-tracker.json`
 - **Portfolio tracking update** in `metrics/portfolio-pipeline.md`
 
 ## Key Files Referenced

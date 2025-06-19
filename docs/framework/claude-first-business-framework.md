@@ -60,33 +60,41 @@ The human partner provides:
 
 ### Our Business Constitution
 
+*Updated after 0% survival rate from adversarial evaluation - now includes customer validation requirements*
+
 These 12 principles guide every decision and define what types of businesses we build:
 
 1. **Self-Serve Experience**: Intuitive, zero-touch customer journey with no human sales team. Growth through product-led adoption only.
 2. **Frugal Marketing**: Organic growth + algorithmic marketing only. No human sales, no cold outreach, no manual demos.
-3. **Underserved Audiences**: Niches with unmet demand and no adequate substitutes. Avoid crowded markets even if fragmented.
-4. **Unique Value Delivery**: Novel solutions where no adequate substitute exists. OK to transpose successful concepts to new markets (e.g., 'Uber for X')
+3. **Customer-Validated Audiences**: Target segments with proven willingness AND ability to pay our pricing. Evidence required from forums, discussions, and comparable tool adoption.
+4. **Unique Value Delivery**: Novel solutions where no adequate substitute exists for the specific customer segment. OK to transpose successful concepts to underserved markets.
 5. **Platform Architecture**: Reusable core for multiple products
 6. **Self-Optimizing Systems**: Continuous improvement from all signals
 7. **Global by Design**: Localizable from day one
-8. **Immediate Monetization**: Clear path to profitability
+8. **Immediate Monetization**: Clear path to profitability through subscription (<50 customers) OR alternative models (referrals, marketplace commissions, partner revenue)
 9. **Seed-Strapped Operations**: Costs scale with revenue
 10. **15-Hour Workweek**: Post-MVP human time constraint
-11. **Executable Strategy**: Every plan backed by research and clear steps
-12. **AI-First Operations**: Claude drives all core functions
+11. **Evidence-Based Strategy**: Every customer claim backed by research with specific quotes, pricing data, and market evidence
+12. **AI-First Operations**: Claude drives all core functions within current technical capabilities
 
 ### What We're Looking For
 
+*Updated based on adversarial evaluation learnings*
+
 Businesses that meet our constitution typically share these characteristics:
 
-- **Market**: $100M-$1B TAM with fragmented competition
-- **Customer Types**: Both B2B and B2C opportunities
-  - **B2B**: Tech-comfortable businesses, solopreneurs, creators
-  - **B2C**: Underserved consumer segments with specific needs
-- **Product**: Can be built as subscription service (SaaS or consumer app)
+- **Market**: $10M-$1B TAM with specific customer validation evidence
+- **Customer Types**: PROVEN willingness to pay OR high-value referral potential
+  - **Direct Pay (Subscription)**: Profitable businesses, affluent consumers, professionals with software budgets
+  - **Free User/Referral Revenue**: Any segment that engages with valuable partner services (loans, insurance, professional services)
+  - **Mixed Models**: Large free user base + premium partner integration opportunities
+  - **AVOID for Direct Pay**: Students, seniors on fixed income, nonprofits, struggling freelancers (unless alternative monetization available)
+- **Product**: Buildable with standard web stack (Next.js, TypeScript, Supabase) - NO native apps, video processing, voice recognition
 - **Operations**: Automatable customer journey end-to-end
-- **Growth**: Organic/viral potential, not dependent on ads
-- **Moat**: Network effects, data advantages, or AI capabilities
+- **Growth**: Organic/viral potential with specific mechanisms identified
+- **Moat**: Network effects, switching costs, or data advantages (not just "AI makes it better")
+
+**CRITICAL**: Every customer segment claim must be backed by specific evidence - forum posts, pricing research, comparable tool adoption data.
 
 ## Part 2: Phased Execution Framework
 

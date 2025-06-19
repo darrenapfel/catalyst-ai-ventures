@@ -10,16 +10,21 @@
 
 **Repository**: `darrenapfel/catalyst-ai-ventures`
 
-Access the framework document:
+**CRITICAL**: Read ALL framework documents to understand why previous ideas failed:
 ```
 Read: docs/framework/claude-first-business-framework.md
+Read: phases/phase-1/evaluation-20250619-adversarial-results.md
+Read: docs/strategy/customer-validation-framework.md
+Read: docs/strategy/technical-reality-constraints.md
+Read: docs/strategy/alternative-monetization-models.md
 ```
 
-**Read this document completely** to understand:
-- Our AI-led business vision
-- Our execution approach and constraints
-- Our business constitution and principles
-- What makes ideas worthy of our adversarial evaluation
+**Study the failure patterns** to understand:
+- Why 23 ideas had 0% survival rate
+- Customer segment/pricing mismatches (78% of failures)
+- AI capability overestimation (65% of failures)
+- What customer validation evidence is required
+- Technical feasibility constraints
 
 ---
 
@@ -53,7 +58,7 @@ STRICT CRITERIA - Each idea MUST meet ALL requirements:
 ✅ Can be built/operated by AI (Claude + Claude CODE web stack)
 ✅ Clear path to profit with <$1,000 total investment
 ✅ <15 hours/week human time after launch
-✅ Subscription model ($30-150/month price point)
+✅ Clear monetization model: Subscription ($30-150/month) OR Referral/Lead Generation OR Marketplace Commission OR Partner Revenue Sharing
 ✅ Buildable with: Next.js, TypeScript, Tailwind, Supabase, standard web APIs
 ✅ NO complex features: native apps, video processing, voice recognition, AR/VR, hardware
 
