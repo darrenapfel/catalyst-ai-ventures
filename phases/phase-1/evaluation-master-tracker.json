@@ -1,11 +1,447 @@
 {
-  "evaluations": [],
+  "evaluations": [
+    {
+      "evaluation_id": "eval-20250619-1430",
+      "evaluation_date": "2025-06-19",
+      "proposal_file": "proposal-20250619-1430.md",
+      "ideas": [
+        {
+          "id": "trade-compliance-pro",
+          "name": "TradeCompliance Pro",
+          "tagline": "Mobile-First Safety & Certification Tracking",
+          "market_type": "B2B",
+          "target_customer": "Small electrical, HVAC, and plumbing contractors",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Too many competitors", "Complex maintenance burden", "Cheap target market", "Unclear value prop superiority"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-1-tradecompliance-pro"
+        },
+        {
+          "id": "budget-builder-mobile",
+          "name": "BudgetBuilder Mobile",
+          "tagline": "Real-Time Job Cost Tracking",
+          "market_type": "B2B",
+          "target_customer": "Small construction companies (5-20 employees)",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Crowded market", "Point solution in all-in-one world", "Integration complexity", "Same cheap audience"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-2-budgetbuilder-mobile"
+        },
+        {
+          "id": "fieldsync-pro",
+          "name": "FieldSync Pro",
+          "tagline": "Offline-First Mobile Project Management",
+          "market_type": "B2B",
+          "target_customer": "Subcontractors in poor connectivity areas",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Feature not a product", "Major players already solve this", "Technical complexity understated", "Weak differentiation"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-3-fieldsync-pro"
+        },
+        {
+          "id": "quickbid-estimator",
+          "name": "QuickBid Estimator",
+          "tagline": "AI-Powered Takeoffs for Small Contractors",
+          "market_type": "B2B",
+          "target_customer": "Small contractors doing 3-4 bids monthly",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Technical complexity beyond capabilities", "Liability issues", "Crowded market", "Contractors won't trust AI"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-4-quickbid-estimator"
+        },
+        {
+          "id": "smart-client-intake",
+          "name": "Smart Client Intake & Lead Conversion Platform",
+          "tagline": "Convert 3x more leads with intelligent intake automation",
+          "market_type": "B2B",
+          "target_customer": "Solo lawyers earning $70-140K annually",
+          "verdict": "BORDERLINE_PIVOT",
+          "kill_reasons": ["Market exists but approach wrong", "Lawyers need leads not management", "Pivot to lead generation also failed"],
+          "pivot_potential": "Attempted pivot to legal leads marketplace - also failed",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-5-smart-client-intake"
+        },
+        {
+          "id": "document-automation",
+          "name": "Document Automation & Template Management System",
+          "tagline": "Create legal documents in minutes, not hours",
+          "market_type": "B2B",
+          "target_customer": "Solo practitioners and small firms",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Hyper-saturated market", "Complex template maintenance", "Lawyers want integrated solutions"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-6-document-automation"
+        },
+        {
+          "id": "compliance-calendar",
+          "name": "Compliance Calendar & Deadline Management",
+          "tagline": "Never miss another filing deadline",
+          "market_type": "B2B",
+          "target_customer": "Solo accountants and small CPA firms",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Massive liability", "Impossible maintenance burden", "Dominated by entrenched players", "CPAs won't trust startup"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-7-compliance-calendar"
+        },
+        {
+          "id": "marketing-automation-prof",
+          "name": "Marketing Automation for Professional Services",
+          "tagline": "Get clients while you sleep with compliant marketing automation",
+          "market_type": "B2B",
+          "target_customer": "Solo lawyers/accountants without marketing expertise",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Professionals don't want to market", "Saturated space", "Compliance complexity overstated", "Wrong problem"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-8-marketing-automation"
+        },
+        {
+          "id": "smartrefi-calculator",
+          "name": "SmartRefi Calculator",
+          "tagline": "Save thousands on student loans with personalized refinancing insights",
+          "market_type": "B2C",
+          "target_customer": "Graduates with $20K+ student loans",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Commodity calculator", "Unsustainable referral model", "Dominated market", "Wrong timing with rising rates"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-9-smartrefi-calculator"
+        },
+        {
+          "id": "gradpath",
+          "name": "GradPath",
+          "tagline": "Career Planning & Income Optimization",
+          "market_type": "B2C",
+          "target_customer": "Recent graduates entering first jobs",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Dominated market", "Confused monetization", "Wrong customer segment", "Forced refinancing connection"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-10-gradpath"
+        },
+        {
+          "id": "debtfree-dashboard",
+          "name": "DebtFree Dashboard",
+          "tagline": "Budget Management for Recent Grads",
+          "market_type": "B2C",
+          "target_customer": "Recent grads with student loans",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Saturated market", "Weak differentiation", "Expensive customer acquisition", "Dominated by free alternatives"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-11-debtfree-dashboard"
+        },
+        {
+          "id": "raterocket",
+          "name": "RateRocket",
+          "tagline": "Refinancing Comparison Marketplace",
+          "market_type": "B2C",
+          "target_customer": "Creditworthy borrowers with $25K+ loans",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Commodity marketplace", "Dominated by funded players", "Shrinking market", "Unsustainable unit economics"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-12-raterocket"
+        },
+        {
+          "id": "syncmaster-pro",
+          "name": "SyncMaster Pro",
+          "tagline": "Multi-Channel Inventory Sync Platform",
+          "market_type": "B2B",
+          "target_customer": "E-commerce businesses on 3+ channels",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Feature not product", "Technical complexity understated", "Dominated market", "Integration tarpit"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-13-syncmaster-pro"
+        },
+        {
+          "id": "priceiq",
+          "name": "PriceIQ",
+          "tagline": "AI-Powered Dynamic Pricing Engine",
+          "market_type": "B2B",
+          "target_customer": "Mid-market e-commerce with 500+ SKUs",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["SMBs lack margin flexibility", "Web scraping legally risky", "ML needs data they don't have", "Feature not product"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-14-priceiq"
+        },
+        {
+          "id": "servicesync-ai",
+          "name": "ServiceSync AI",
+          "tagline": "Smart Customer Service Automation Hub",
+          "market_type": "B2B",
+          "target_customer": "E-commerce stores with high support volume",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Saturated market", "AI not ready for nuanced support", "Merchants prefer human VAs", "Dominated by funded players"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-15-servicesync-ai"
+        },
+        {
+          "id": "profitpulse",
+          "name": "ProfitPulse",
+          "tagline": "Unified Financial Reporting Dashboard",
+          "market_type": "B2B",
+          "target_customer": "Multi-channel sellers needing reporting",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Complex accounting requirements", "Dominated by specialized tools", "Merchants trust accountants not dashboards"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-16-profitpulse"
+        },
+        {
+          "id": "subscription-logic",
+          "name": "Subscription Logic Engine",
+          "tagline": "Beyond Basic Billing",
+          "market_type": "B2B",
+          "target_customer": "SaaS companies with complex billing",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["No real middle market", "Complex billing requires enterprise infrastructure", "Solved problem for target segment"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-17-subscription-logic"
+        },
+        {
+          "id": "customer-success-automation",
+          "name": "Customer Success Automation Platform",
+          "tagline": "Post-Sales Intelligence",
+          "market_type": "B2B",
+          "target_customer": "B2B SaaS with 50+ customers",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Target segment too small", "Enterprise complexity for SMB price", "Market dominated and consolidating"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-18-customer-success"
+        },
+        {
+          "id": "saas-usage-intelligence",
+          "name": "SaaS Usage Intelligence",
+          "tagline": "Granular Product Analytics",
+          "market_type": "B2B",
+          "target_customer": "SaaS companies wanting deeper insights",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Commodity market with established winners", "No real differentiation", "SMBs don't value analytics enough"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-19-saas-usage"
+        },
+        {
+          "id": "saas-operations-center",
+          "name": "SaaS Operations Command Center",
+          "tagline": "Unified Tool Stack Management",
+          "market_type": "B2B",
+          "target_customer": "Companies with 20+ SaaS subscriptions",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Feature not product", "Enterprises use comprehensive solutions", "SMBs don't have problem", "Vitamin not painkiller"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-20-saas-operations"
+        },
+        {
+          "id": "smart-home-maintenance",
+          "name": "Smart Home Maintenance Hub",
+          "tagline": "Save thousands with preventive maintenance and insurance optimization",
+          "market_type": "B2C",
+          "target_customer": "Homeowners aged 35-65",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Three failed models combined", "Episodic need prevents subscription", "Dominated markets in each vertical"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-21-home-maintenance"
+        },
+        {
+          "id": "energy-optimization",
+          "name": "Energy Optimization Platform",
+          "tagline": "Cut energy bills by 50% and unlock insurance discounts",
+          "market_type": "B2C",
+          "target_customer": "Homeowners with high energy bills",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Multiple failed models combined", "Energy savings require hardware not software", "Utility partnerships impossible"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-22-energy-optimization"
+        },
+        {
+          "id": "insurance-concierge",
+          "name": "Insurance Shopping Concierge",
+          "tagline": "Save $2,000/year with annual insurance optimization",
+          "market_type": "B2C",
+          "target_customer": "Homeowners frustrated with insurance costs",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Service business not SaaS", "Insurance is commoditized", "Annual model means 100% churn", "Dominated by lead-gen"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-23-insurance-concierge"
+        },
+        {
+          "id": "smart-staff-scheduling",
+          "name": "Smart Staff Scheduling",
+          "tagline": "Optimize healthcare staffing while cutting overtime",
+          "market_type": "B2B",
+          "target_customer": "Medical practices with 5-50 staff",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Healthcare complexity understated", "Massive liability", "Requires integrated EMR solution", "Practices won't trust startups"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-24-staff-scheduling"
+        },
+        {
+          "id": "insurance-verification",
+          "name": "Automated Insurance Verification Hub",
+          "tagline": "Verify insurance in seconds, not minutes",
+          "market_type": "B2B",
+          "target_customer": "High-volume medical practices",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Infrastructure market dominated by billion-dollar players", "Verification often free", "Requires massive payer relationships"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-25-insurance-verification"
+        },
+        {
+          "id": "ai-client-reporting",
+          "name": "AI-Powered Client Reporting Automation",
+          "tagline": "Generate beautiful client reports in minutes",
+          "market_type": "B2B",
+          "target_customer": "Marketing agencies managing 10-50 clients",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Saturated market with 20+ competitors", "Commodity reporting", "Agencies value strategy not dashboards"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-26-client-reporting"
+        },
+        {
+          "id": "freelancer-management",
+          "name": "All-in-One Freelancer Business Management",
+          "tagline": "Run your entire freelance business from one platform",
+          "market_type": "B2B/B2C",
+          "target_customer": "Freelancers earning $50K+ annually",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Hyper-saturated market", "Freelancers prefer specialized tools", "Price-sensitive customers", "No differentiation"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-adversarial-results.md#idea-27-freelancer-management"
+        }
+      ],
+      "summary_stats": {
+        "total_ideas": 27,
+        "survivors": 0,
+        "borderline_pivots": 1,
+        "complete_failures": 26,
+        "survival_rate": "0%"
+      }
+    },
+    {
+      "evaluation_id": "eval-20250619-0910",
+      "evaluation_date": "2025-06-19",
+      "proposal_file": "proposal-20250619-0910.md",
+      "ideas": [
+        {
+          "id": "payflow-pro",
+          "name": "PayFlow Pro",
+          "tagline": "Construction Payment Management Platform",
+          "market_type": "B2B",
+          "target_customer": "Small to medium contractors ($500K-$5M annual revenue)",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Procore dominates ($9.6B valuation)", "Payment delays are cash flow games not software problems", "Tech-averse price-sensitive market", "Massive compliance complexity"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-1-payflow-pro"
+        },
+        {
+          "id": "permitpal",
+          "name": "PermitPal",
+          "tagline": "License & Permit Renewal Tracker",
+          "market_type": "B2B",
+          "target_customer": "Small businesses managing 3-5 licenses manually",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["No centralized data source", "Minimal savings vs free alternatives", "Impossible technical requirements", "Massive liability risk"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-2-permitpal"
+        },
+        {
+          "id": "refinanceright",
+          "name": "RefinanceRight",
+          "tagline": "Student Loan Refinancing Referral Platform",
+          "market_type": "B2C",
+          "target_customer": "College graduates with $20,000+ in student loan debt",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Terrible timing with rates at 15-year highs", "Dominated by Credible/NerdWallet", "Referral fees collapsed 80%", "No differentiation"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-3-refinanceright"
+        },
+        {
+          "id": "legalflow",
+          "name": "LegalFlow",
+          "tagline": "Law Firm Client Intake Automation",
+          "market_type": "B2B",
+          "target_customer": "Personal injury law firms with 2-15 attorneys",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Lawyers won't trust startup with Bar compliance", "6-12 month sales cycles", "Entrenched competition (Clio)", "Integration complexity nightmare"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-4-legalflow"
+        },
+        {
+          "id": "syncmaster",
+          "name": "SyncMaster",
+          "tagline": "Multi-Channel E-commerce Inventory Sync",
+          "market_type": "B2B",
+          "target_customer": "E-commerce sellers with $100K-$2M revenue on 3+ channels",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Feature not product", "Race-to-bottom pricing", "Marketplace APIs break constantly", "Shrinking TAM"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-5-syncmaster"
+        },
+        {
+          "id": "sponsrlink",
+          "name": "SponsrLink",
+          "tagline": "Micro-Influencer Sponsorship Marketplace",
+          "market_type": "B2B",
+          "target_customer": "Micro-influencers (10K-100K followers)",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Impossible unit economics ($10-50 per transaction)", "Extreme platform leakage", "Fraud rampant", "Instagram/TikTok offer free alternatives"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-6-sponsrlink"
+        },
+        {
+          "id": "docflow",
+          "name": "DocFlow",
+          "tagline": "Accountant Document Collection Automation",
+          "market_type": "B2B",
+          "target_customer": "Small-to-medium accounting firms (2-20 CPAs)",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Feature not product", "Accountants tech-averse and cheap", "Integration hell with legacy systems", "Shrinking market"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-7-docflow"
+        },
+        {
+          "id": "flowsync",
+          "name": "FlowSync",
+          "tagline": "AI-Powered Async Standups",
+          "market_type": "B2B",
+          "target_customer": "Remote/hybrid software teams (5-50 people)",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Commoditized space", "Geekbot at $2.50 vs your $10-15", "Low engagement (80% drop-off)", "Slack/Teams adding native features"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-8-flowsync"
+        },
+        {
+          "id": "contractcraft",
+          "name": "ContractCraft",
+          "tagline": "AI-Powered Freelancer Contracts",
+          "market_type": "B2B",
+          "target_customer": "Freelancers and consultants lacking legal knowledge",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Massive legal liability", "LegalZoom dominates", "Freelancers too price-sensitive", "AI + legal = lawsuit waiting"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-9-contractcraft"
+        },
+        {
+          "id": "firstbuyerconnect",
+          "name": "FirstBuyerConnect",
+          "tagline": "Real Estate Agent Matching for First-Time Buyers",
+          "market_type": "B2C",
+          "target_customer": "First-time home buyers aged 25-40",
+          "verdict": "HOPELESS_KILL",
+          "kill_reasons": ["Zillow's $2B machine owns space", "First-time buyers least profitable", "Real estate is relationship-driven", "No real differentiation"],
+          "pivot_potential": "None",
+          "evaluation_link": "evaluation-20250619-0910-adversarial-results.md#idea-10-firstbuyerconnect"
+        }
+      ],
+      "summary_stats": {
+        "total_ideas": 10,
+        "survivors": 0,
+        "borderline_pivots": 0,
+        "complete_failures": 10,
+        "survival_rate": "0%"
+      }
+    }
+  ],
   "overall_stats": {
-    "total_evaluations": 0,
-    "total_ideas_evaluated": 0,
+    "total_evaluations": 2,
+    "total_ideas_evaluated": 37,
     "total_survivors": 0,
-    "total_borderline_pivots": 0,
-    "total_failures": 0,
+    "total_borderline_pivots": 1,
+    "total_failures": 36,
     "overall_survival_rate": "0%",
     "last_updated": "2025-06-19"
   }

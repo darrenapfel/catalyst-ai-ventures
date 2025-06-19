@@ -22,6 +22,7 @@
 
 ## Step 1: Connect to Repository
 
+**IMPORTANT**: USE YOUR GITHUB MCP SERVER TO ACCESS THE FOLOOWING REPOSITORY
 **Repository**: `darrenapfel/catalyst-ai-ventures`
 
 Access the framework and evaluation results:

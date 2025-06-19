@@ -5,13 +5,36 @@ import { EvaluationData } from '@/lib/types';
 
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), '..', 'phases', 'phase-1', 'evaluation-master-tracker.json');
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const data: EvaluationData = JSON.parse(fileContents);
+    // Try multiple possible paths
+    const possiblePaths = [
+      path.join(process.cwd(), '../phases/phase-1/evaluation-master-tracker.json'),
+      path.join(process.cwd(), '../../catalyst-ai-ventures/phases/phase-1/evaluation-master-tracker.json'),
+      '/Users/darrenapfel/DEVELOPER/Catalyst/catalyst-ai-ventures/phases/phase-1/evaluation-master-tracker.json'
+    ];
     
-    return NextResponse.json(data);
+    let data: EvaluationData | null = null;
+    let successPath: string | null = null;
+    
+    for (const tryPath of possiblePaths) {
+      try {
+        const fileContents = fs.readFileSync(tryPath, 'utf8');
+        data = JSON.parse(fileContents);
+        successPath = tryPath;
+        break;
+      } catch (e) {
+        console.log(`Failed to read from ${tryPath}`);
+      }
+    }
+    
+    if (data && successPath) {
+      console.log(`Successfully read evaluation data from ${successPath}`);
+      return NextResponse.json(data);
+    }
+    
+    throw new Error('Could not find evaluation data file');
   } catch (error) {
     console.error('Error reading evaluation data:', error);
+    console.error('Current working directory:', process.cwd());
     
     // Return empty data structure as fallback
     const fallbackData: EvaluationData = {

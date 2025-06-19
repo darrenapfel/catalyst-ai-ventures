@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 """
+⚠️ DEPRECATED - DO NOT USE ⚠️
+
+This script is deprecated and should not be used.
+It attempts to automate Claude's persona role-play, which is impossible.
+
+Use manual evaluation instead:
+1. Read /adversarial-evaluation-instructions.md
+2. Manually evaluate proposals by role-playing all personas
+
+See DEPRECATED.md in this directory for details.
+
+---
+
 Interactive Two-Phase Adversarial Evaluation System
 Claude engages as each persona for authentic evaluation
 """

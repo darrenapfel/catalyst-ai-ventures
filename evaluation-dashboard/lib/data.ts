@@ -2,14 +2,22 @@ import { EvaluationData, Idea } from './types';
 
 export async function getEvaluationData(): Promise<EvaluationData> {
   try {
+    // Use API route directly since it has proper path resolution
+    console.log('Fetching evaluation data from API');
     const response = await fetch('/api/evaluations');
+    console.log('API Response status:', response.status);
+    
     if (!response.ok) {
-      throw new Error('Failed to fetch evaluation data');
+      throw new Error(`Failed to fetch evaluation data: ${response.status} ${response.statusText}`);
     }
-    return await response.json();
+    
+    const data = await response.json();
+    console.log('Loaded evaluation data successfully');
+    return data;
   } catch (error) {
     console.error('Error fetching evaluation data:', error);
-    // Return empty data structure as fallback
+    
+    // Return empty data structure as last resort
     return {
       evaluations: [],
       overall_stats: {

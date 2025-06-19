@@ -1,10 +1,10 @@
 # Adversarial Evaluation Instructions
 
 ## Purpose
-Run interactive two-phase adversarial evaluation on business proposals to achieve <10% survival rate through rigorous quality filtering.
+Run two-phase adversarial evaluation on business proposals to achieve <10% survival rate through rigorous quality filtering.
 
 ## Quick Start (For New Sessions)
-```bash
+```
 # Step 1: Read the main bootloader
 Read: catalyst-bootloader.md
 
@@ -12,7 +12,7 @@ Read: catalyst-bootloader.md
 Read: adversarial-evaluation-instructions.md
 
 # Step 3: Execute evaluation on proposal file
-Read adversarial-evaluation-instructions.md and evaluate proposal-YYYYMMDD-HHMM.md
+Manually evaluate proposal-YYYYMMDD-HHMM.md using the process below
 ```
 
 ## Prerequisites
@@ -33,35 +33,19 @@ This system achieves <10% survival rates through brutal filtering:
 4. **Technical Realist** 🔧 - Assesses Claude CODE feasibility
 5. **Market Analyst** 📊 - Checks competition & timing
 
-## Execution Methods
+## The ONLY Execution Method: Manual Evaluation
 
-### Method 1: Interactive Python Script (Recommended)
-```bash
-cd /Users/darrenapfel/DEVELOPER/Catalyst/catalyst-ai-ventures
-python3 tools/adversarial_conversation_interactive.py phases/phase-1/proposal-YYYYMMDD-HHMM.md
-```
+**IMPORTANT**: There is no automated script for this process. Claude must manually role-play all personas. Any Python scripts in the tools directory are deprecated and should not be used.
 
-**Important**: This script requires interactive terminal input - Claude must actually engage as each persona during the evaluation.
+### Why Manual Evaluation is Required
+- Claude cannot "automate itself" - the value comes from authentic persona role-play
+- Each persona requires genuine critical thinking and specific examples
+- Context switching between personas is key to finding fatal flaws
+- The manual process IS the system working as designed
 
-### Method 2: Manual Evaluation (If Script Issues)
+### How to Run Manual Evaluation
 
-If the interactive script has issues, Claude can manually run the adversarial evaluation by:
-
-1. **Read the proposal file**: `phases/phase-1/proposal-YYYYMMDD-HHMM.md`
-
-2. **For each idea in the proposal**:
-   - Engage authentically as each of the 5 adversarial personas
-   - Provide brutal, specific criticism from each persona's perspective
-   - Synthesize whether idea should be: STRONG_PASS, BORDERLINE_PIVOT, or HOPELESS_KILL
-   - For BORDERLINE_PIVOT: extract insights, redesign concept, re-evaluate
-
-3. **Generate comprehensive outputs**:
-   - Main evaluation report with executive summary
-   - Full persona transcripts as appendix (using template)
-   - Update master tracker JSON
-   - Update portfolio pipeline metrics
-
-## Detailed Manual Process
+## Detailed Evaluation Process
 
 ### Step 1: Read and Parse Proposal
 ```
