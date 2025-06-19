@@ -1,4 +1,17 @@
-# Adversarial Ideation Execution Playbook
+# ⚠️ DEPRECATED - DO NOT USE ⚠️
+
+**This document is outdated and has been superseded by the manual evaluation process.**
+
+**Use instead**: `/adversarial-evaluation-instructions.md` (at root level)
+
+**Why deprecated**: 
+- This playbook attempted to automate or separate personas into different sessions
+- We discovered manual evaluation with Claude role-playing all personas is superior
+- The automation approaches described here don't work effectively
+
+---
+
+# Adversarial Ideation Execution Playbook (ARCHIVED)
 
 **Purpose**: Step-by-step automation guide for running the adversarial ideation system
 
