@@ -80,6 +80,7 @@ For EACH idea, validate pricing by researching:
 - Can you find 3+ examples of successful tools serving this segment at your target price?
 
 CUSTOMER SEGMENTS BY MONETIZATION MODEL:
+(Use these as a guide to understanding the model, but feel free to think freely about novel applications)
 
 **Direct Subscription (Must Have Software Budget)**:
 ✅ Profitable small businesses ($100K+ revenue)
