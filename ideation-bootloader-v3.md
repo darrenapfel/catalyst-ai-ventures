@@ -19,8 +19,9 @@ Generate rigorously validated business proposals that can survive <10% adversari
 - Targeting customers who resist technology adoption
 - Underestimating technical and regulatory complexity
 - Poor unit economics on micro-transactions
+- Focusing on revenue scale over ROI and profitability
 
-**Key Insight**: The best opportunities are in underserved niches where Excel spreadsheets or manual processes are the only "competition."
+**Key Insight**: The best opportunities prioritize strong unit economics and operational efficiency over arbitrary revenue targets. Look for problems where current solutions have poor ROI for customers.
 
 ---
 
@@ -31,11 +32,12 @@ Generate 10+ business ideas using rigorous customer-first validation. Think broa
 ### Core Principles (From Framework)
 1. Self-serve product (no human sales team)
 2. Organic growth potential (no paid ads)
-3. Serves underserved niche (no adequate alternatives)
+3. Serves underserved audience (no adequate alternatives)
 4. AI-operatable (standard web stack)
 5. <$1,000 to launch
 6. <15 hours/week human oversight
-7. Clear path to profitability
+7. Strong ROI focus (profitability > scale)
+8. Industry agnostic (B2B, B2C, regulated all OK if operationally feasible)
 
 ### Research Requirements for EACH Idea
 
@@ -93,13 +95,14 @@ Before proposing any idea, research and document:
 ```markdown
 ## [Number]. [Product Name]
 **Tagline**: [One compelling sentence]
-**Market Type**: B2B or B2C
+**Market Type**: B2B, B2C, or B2B2C (specify exact model)
 **Target Customer**: [Specific segment with context - avoid generic descriptions]
 **Customer Evidence**: [Direct quotes/links from research showing demand]
 **Problem**: [Quantified pain point with time/money impact]
 **Solution**: [Specific features addressing the problem]
 **Monetization Model**: [Which model and specific pricing]
 **Revenue Validation**: [Proof this segment pays these amounts]
+**ROI Metrics**: [Estimated CAC, LTV, gross margins, time to profitability]
 **Why Now**: [Specific trend making this timely]
 **Technical Feasibility**: [Web stack components needed]
 **Moat**: [What prevents easy copying]
@@ -110,28 +113,45 @@ Before proposing any idea, research and document:
 
 ### Industry Exploration Guide
 
-Think creatively across ALL sectors. The best opportunities often come from:
+**IMPORTANT**: No industry is off-limits. Evaluate each opportunity based on its specific implementation and ROI potential, not category prejudices.
 
-**Overlooked B2B Niches**:
-- Specialized professional services
-- Niche manufacturing or trades
-- Regional service businesses
-- Industry-specific consultants
-- Emerging job categories
+Think creatively across ALL sectors:
 
-**Underserved B2C Segments**:
-- Life transitions and milestones
-- Specific hobby communities
-- Cultural or demographic niches
-- Location-specific needs
-- Emerging lifestyle trends
+**Any B2B Market** (if truly self-serve):
+- Professional services automation
+- Manufacturing and industrial tools
+- Healthcare administration (not diagnosis)
+- Financial services workflows
+- Educational institution needs
+- Government contractor tools
+- Real estate professional aids
 
-**Cross-Industry Opportunities**:
-- Workflow gaps between sectors
-- Compliance and regulation changes
-- New technology adoption curves
-- Generational shifts in industries
-- Post-pandemic behavior changes
+**Any B2C Market** (if strong unit economics):
+- Entertainment and gaming
+- Health and wellness tracking
+- Financial planning tools
+- Educational content/courses
+- Hobby and interest communities
+- Dating and social connections
+- Productivity and organization
+
+**Regulated Industries** (if compliance is automatable):
+- Legal document automation
+- Insurance quoting/comparison
+- Tax preparation assistance
+- Food service compliance
+- Environmental reporting
+- Safety documentation
+- Professional licensing
+
+**High-ROI Opportunities Often Hide In**:
+- Boring but essential workflows
+- Industries resisting digital transformation
+- Markets where incumbents overcharge
+- Niches too small for big companies
+- Problems people solve with spreadsheets
+- Recurring compliance requirements
+- Cross-border or multi-jurisdiction needs
 
 ### Technical Constraints
 
@@ -162,7 +182,10 @@ Before including any idea:
 - [ ] Identified clear differentiation from incumbents
 - [ ] Validated organic growth mechanism
 - [ ] Assessed regulatory and liability risks
-- [ ] Confirmed sufficient market size
+- [ ] Calculated realistic CAC < 3 months revenue
+- [ ] Estimated gross margins >70% (software) or >50% (marketplace)
+- [ ] Projected path to profitability <12 months
+- [ ] Confirmed truly self-serve operation possible
 
 ### Quality Standards
 
@@ -175,13 +198,23 @@ Before including any idea:
 ### Output Instructions
 
 1. Generate 10-15 rigorously validated ideas
-2. Ensure industry diversity (no more than 2 per sector)
-3. Format as clean markdown
+2. Ensure TRUE industry diversity:
+   - Mix of B2B and B2C
+   - Include at least 2 regulated industry ideas
+   - Include at least 2 "boring" operational tools
+   - No more than 2 ideas in any single sector
+3. Format as clean markdown with ROI metrics
 4. Include all validation evidence
 5. Be brutally honest about challenges
 
-**Remember**: We're looking for hidden gems in overlooked markets, not another competitor to Zillow or Uber. The best ideas often sound boring but solve expensive problems for specific groups who are desperately seeking solutions.
+**Remember**: We're looking for high-ROI opportunities in ANY market, not just "sexy" tech startups. A boring B2B tool with 80% margins and true self-serve potential beats a consumer app requiring millions in marketing. Focus on:
+- Strong unit economics over market size
+- Operational efficiency over growth rate  
+- Profitability timeline over revenue scale
+- Customer ROI over feature innovation
+
+The best ideas often sound boring but deliver exceptional returns by solving expensive problems for specific groups who are desperately seeking solutions.
 
 ---
 
-*This bootloader is designed to generate diverse, validated ideas across all industries while maintaining the rigor needed to survive adversarial evaluation.*
+*This bootloader is designed to generate diverse, validated ideas across ALL industries without prejudice, focusing on ROI and operational feasibility rather than arbitrary constraints.*

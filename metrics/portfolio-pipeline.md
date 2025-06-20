@@ -3,6 +3,7 @@
 **Last Updated**: June 19, 2025  
 **Evaluation System**: Interactive Two-Phase Adversarial  
 **Target Survival Rate**: <10% (ruthless quality filtering)
+**Focus**: ROI and profitability over revenue scale
 
 ## Phase 1: Idea Generation & Filtering
 
@@ -40,6 +41,15 @@
 - Launch and early customer acquisition
 - Growth optimization and scaling
 
+## ROI Tracking (New Focus)
+
+**Target Metrics for Surviving Ideas**:
+- CAC < 3 months of revenue
+- LTV/CAC ratio > 3:1
+- Gross margins > 70% (software) or > 50% (marketplace)
+- Path to profitability < 12 months
+- True self-serve capability (no human sales)
+
 ## Success Patterns (To Be Identified)
 
 **Idea Characteristics That Survive**:
@@ -68,7 +78,7 @@
 - Generate hundreds of ideas through repeated evaluation cycles
 - Maintain rigorous quality standards with <10% survival rates
 - Build portfolio of 3-5 AI-led businesses over 12-18 months
-- Each business: <$1K launch cost, <15hrs/week operation, profitable within 8 weeks
+- Each business: <$1K launch cost, <15hrs/week operation, strong ROI metrics (LTV/CAC >3:1)
 
 ## Evaluation Quality Metrics
 

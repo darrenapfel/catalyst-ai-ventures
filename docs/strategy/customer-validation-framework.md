@@ -51,20 +51,50 @@ Our Pricing: $C/month (within validated range)
 - Small Business B2B: What's their annual revenue? Software budget allocation?
 - Enterprise B2B: Who controls purchasing? What's typical software spend?
 
-**Red Flag Segments** (avoid unless exceptional evidence):
-- Students (limited disposable income)
-- Seniors on fixed income (price-sensitive)
-- Nonprofits (expect discounts/free)
-- Individual freelancers under $50K (high price sensitivity)
-- Healthcare workers (don't control purchasing)
+**ROI-Based Segment Evaluation** (no automatic exclusions):
+- Calculate CAC for each segment
+- Estimate LTV based on pricing and churn
+- Any segment acceptable if LTV/CAC > 3:1
+- Focus on payback period, not segment labels
 
-**Proven Segments**:
-- Profitable businesses $100K+ revenue
-- Professional services with software budgets
-- SaaS companies (understand software value)
-- Affluent professionals with expense accounts
+**High-ROI Indicators**:
+- Already paying for inadequate solutions
+- Quantifiable time/money savings from your solution
+- Low acquisition costs (organic discovery)
+- High retention potential (switching costs)
+- Clear value metric alignment
 
-### 4. Market Size Validation
+### 4. ROI Validation
+**Requirement**: Calculate unit economics for profitability, not scale
+
+**Key Metrics**:
+- **CAC (Customer Acquisition Cost)**: All costs to acquire one customer
+- **LTV (Lifetime Value)**: Revenue per customer × average lifetime
+- **Payback Period**: CAC ÷ Monthly revenue per customer
+- **Gross Margin**: (Revenue - Direct costs) ÷ Revenue
+
+**Target Thresholds**:
+- CAC < 3 months of revenue
+- LTV/CAC > 3:1
+- Gross margins > 70% (software) or > 50% (marketplace)
+- Path to profitability < 12 months
+
+**Calculation Template**:
+```
+CAC Calculation:
+- Content/SEO costs: $X ÷ customers acquired
+- Support onboarding: Y hours × $Z/hour
+- Total CAC: $[amount]
+
+LTV Calculation:
+- Monthly revenue: $[price]
+- Average retention: [months]
+- Total LTV: $[amount]
+
+ROI Verdict: LTV/CAC = [ratio] ✅/❌
+```
+
+### 5. Market Size Validation
 **Requirement**: Count actual businesses/individuals in target segment
 
 **Research Process**:

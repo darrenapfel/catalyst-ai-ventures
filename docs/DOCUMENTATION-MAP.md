@@ -20,11 +20,13 @@
 ### Process Guides
 Located in `/docs/processes/`:
 - **Git Workflow**: `git-workflow-guide.md`
+- **Orchestrator Guide**: `orchestrator-guide.md` - Task-based evaluation process 🆕
+- **Multi-LLM Ideation**: `multi-llm-ideation-guide.md`
 - **Adversarial Evaluation**: See `/adversarial-evaluation-instructions.md` (root level)
 
 ### Reference Materials
 Located in `/docs/reference/`:
-- **Evaluation Checklist**: `adversarial-evaluation-checklist.md`
+- **Evaluation Checklist**: `adversarial-evaluation-checklist.md` - Updated for task-based approach 🔄
 
 ### Strategic Documents
 Located in `/docs/strategy/`:

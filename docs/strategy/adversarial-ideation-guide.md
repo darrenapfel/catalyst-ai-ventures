@@ -17,7 +17,7 @@
 **Key Questions**:
 - How do you acquire customers for less than their LTV?
 - What's your realistic serviceable market (SAM), not TAM?
-- How does this get to $10M ARR with <15 hrs/week human time?
+- Can you achieve LTV > 3x CAC with <15 hrs/week human time?
 - What happens when a competitor with $50M funding copies you?
 
 **Prompt**:

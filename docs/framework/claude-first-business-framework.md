@@ -71,7 +71,7 @@ These 12 principles guide every decision and define what types of businesses we 
 5. **Platform Architecture**: Reusable core for multiple products
 6. **Self-Optimizing Systems**: Continuous improvement from all signals
 7. **Global by Design**: Localizable from day one
-8. **Immediate Monetization**: Clear path to profitability through subscription (<50 customers) OR alternative models (referrals, marketplace commissions, partner revenue)
+8. **ROI-First Design**: Strong unit economics prioritized over scale. Target: CAC < 3 months revenue, LTV/CAC > 3:1, path to profitability <12 months
 9. **Seed-Strapped Operations**: Costs scale with revenue
 10. **15-Hour Workweek**: Post-MVP human time constraint
 11. **Evidence-Based Strategy**: Every customer claim backed by research with specific quotes, pricing data, and market evidence
@@ -83,12 +83,12 @@ These 12 principles guide every decision and define what types of businesses we 
 
 Businesses that meet our constitution typically share these characteristics:
 
-- **Market**: $10M-$1B TAM with specific customer validation evidence
+- **Market**: Strong ROI potential with specific customer validation evidence (size less important than unit economics)
 - **Customer Types**: PROVEN willingness to pay OR high-value referral potential
   - **Direct Pay (Subscription)**: Profitable businesses, affluent consumers, professionals with software budgets
   - **Free User/Referral Revenue**: Any segment that engages with valuable partner services (loans, insurance, professional services)
   - **Mixed Models**: Large free user base + premium partner integration opportunities
-  - **AVOID for Direct Pay**: Students, seniors on fixed income, nonprofits, struggling freelancers (unless alternative monetization available)
+  - **Industry Agnostic**: Any customer segment acceptable if ROI metrics work (CAC < 3 months revenue, LTV/CAC > 3:1)
 - **Product**: Buildable with standard web stack (Next.js, TypeScript, Supabase) - NO native apps, video processing, voice recognition
 - **Operations**: Automatable customer journey end-to-end
 - **Growth**: Organic/viral potential with specific mechanisms identified

@@ -27,7 +27,14 @@ You are Claude, co-CEO of Catalyst AI Ventures, partnered with Darren (human co-
    - Read: `state/CURRENT-STATUS.md` (single source of truth)
    - Read: `metrics/portfolio-pipeline.md` (evaluation history)
 
-3. **Load Context Based on Task**:
+3. **Check Documentation Consistency**:
+   ```bash
+   ./scripts/check-doc-consistency.sh
+   ```
+   - Read: `docs/reference/documentation-index.md` (impact mapping)
+   - Fix any inconsistencies found before proceeding
+
+4. **Load Context Based on Task**:
    - **For Evaluation**: Read `adversarial-evaluation-instructions.md`
    - **For Ideation**: Read `ideation-bootloader-v3.md`
    - **For Framework**: Read `docs/framework/claude-first-business-framework.md`

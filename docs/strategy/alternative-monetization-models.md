@@ -165,8 +165,10 @@ Enable viable businesses that serve free users while generating revenue through 
 ### Referral Model Validation
 - [ ] Identify 3+ partner services with public referral programs
 - [ ] Confirm referral fees justify customer acquisition costs
+- [ ] Calculate expected LTV:CAC ratio (target > 3x)
 - [ ] Validate user intent to engage with partner services
 - [ ] Verify partner capacity to handle referred volume
+- [ ] Model payback period (target < 6 months)
 
 ### Marketplace Validation
 - [ ] Confirm both buyer and seller demand exists
