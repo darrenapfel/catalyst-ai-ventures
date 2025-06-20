@@ -8,6 +8,14 @@ export interface Idea {
   kill_reasons: string[];
   pivot_potential: string | null;
   evaluation_link: string;
+  // ROI Metrics
+  cac_estimate?: number; // Customer Acquisition Cost in dollars
+  ltv_estimate?: number; // Lifetime Value in dollars
+  ltv_cac_ratio?: number; // LTV/CAC ratio (target > 3)
+  payback_months?: number; // Months to recover CAC
+  gross_margin?: number; // Percentage (0-100)
+  profitability_timeline?: string; // e.g. "6-9 months"
+  average_score?: number; // Average score from evaluators (1-10)
 }
 
 export interface EvaluationSummary {
@@ -34,6 +42,11 @@ export interface OverallStats {
   total_failures: number;
   overall_survival_rate: string;
   last_updated: string;
+  // ROI metrics
+  average_ltv_cac_ratio?: number;
+  ideas_meeting_roi_threshold?: number; // Count of ideas with LTV/CAC > 3
+  average_payback_months?: number;
+  average_score?: number;
 }
 
 export interface EvaluationData {
@@ -56,12 +69,14 @@ export interface DetailedEvaluation {
 // Filter and sort types
 export type VerdictFilter = 'ALL' | 'STRONG_PASS' | 'BORDERLINE_PIVOT' | 'HOPELESS_KILL';
 export type MarketTypeFilter = 'ALL' | 'B2B' | 'B2C' | 'B2B + B2C';
-export type SortField = 'name' | 'verdict' | 'market_type' | 'evaluation_date';
+export type ROIPerformanceFilter = 'ALL' | 'HIGH' | 'MEDIUM' | 'LOW'; // HIGH: >3, MEDIUM: 2-3, LOW: <2
+export type SortField = 'name' | 'verdict' | 'market_type' | 'evaluation_date' | 'ltv_cac_ratio' | 'payback_months' | 'average_score';
 export type SortDirection = 'asc' | 'desc';
 
 export interface FilterState {
   verdict: VerdictFilter;
   marketType: MarketTypeFilter;
+  roiPerformance: ROIPerformanceFilter;
   search: string;
   proposal: string;
 }

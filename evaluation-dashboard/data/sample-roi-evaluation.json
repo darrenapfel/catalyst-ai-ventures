@@ -1,0 +1,68 @@
+{
+  "evaluation_id": "claude-20250619-roi-sample",
+  "evaluation_date": "2025-06-19",
+  "proposal_file": "claude-proposal-20250619-roi.md",
+  "ideas": [
+    {
+      "id": "idea-001",
+      "name": "B2B SaaS Compliance Automation",
+      "tagline": "AI-powered compliance tracking for SMBs",
+      "market_type": "B2B",
+      "target_customer": "Small to medium businesses needing compliance management",
+      "verdict": "STRONG_PASS",
+      "kill_reasons": [],
+      "pivot_potential": null,
+      "evaluation_link": "#",
+      "cac_estimate": 500,
+      "ltv_estimate": 2400,
+      "ltv_cac_ratio": 4.8,
+      "payback_months": 2.5,
+      "gross_margin": 85,
+      "profitability_timeline": "6-9 months",
+      "average_score": 9.2
+    },
+    {
+      "id": "idea-002",
+      "name": "Consumer Subscription Box",
+      "tagline": "Personalized wellness products delivered monthly",
+      "market_type": "B2C",
+      "target_customer": "Health-conscious millennials",
+      "verdict": "BORDERLINE_PIVOT",
+      "kill_reasons": ["High CAC in competitive market", "Low margin due to physical goods"],
+      "pivot_potential": "Consider digital wellness coaching instead",
+      "evaluation_link": "#",
+      "cac_estimate": 80,
+      "ltv_estimate": 180,
+      "ltv_cac_ratio": 2.25,
+      "payback_months": 4,
+      "gross_margin": 45,
+      "profitability_timeline": "12-18 months",
+      "average_score": 6.8
+    },
+    {
+      "id": "idea-003",
+      "name": "AI Resume Builder",
+      "tagline": "Generate optimized resumes with AI",
+      "market_type": "B2C",
+      "target_customer": "Job seekers",
+      "verdict": "HOPELESS_KILL",
+      "kill_reasons": ["Saturated market", "Low willingness to pay", "Poor unit economics"],
+      "pivot_potential": null,
+      "evaluation_link": "#",
+      "cac_estimate": 25,
+      "ltv_estimate": 30,
+      "ltv_cac_ratio": 1.2,
+      "payback_months": 8,
+      "gross_margin": 90,
+      "profitability_timeline": "Never - unsustainable CAC",
+      "average_score": 3.4
+    }
+  ],
+  "summary_stats": {
+    "total_ideas": 3,
+    "survivors": 1,
+    "borderline_pivots": 1,
+    "complete_failures": 1,
+    "survival_rate": "33.3%"
+  }
+}

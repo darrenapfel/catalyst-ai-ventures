@@ -28,6 +28,44 @@ export async function GET() {
     
     if (data && successPath) {
       console.log(`Successfully read evaluation data from ${successPath}`);
+      
+      // Calculate ROI statistics if not already present
+      if (!data.overall_stats.average_ltv_cac_ratio) {
+        let totalRatio = 0;
+        let ratioCount = 0;
+        let totalPayback = 0;
+        let paybackCount = 0;
+        let totalScore = 0;
+        let scoreCount = 0;
+        let roiMeetingThreshold = 0;
+        
+        data.evaluations.forEach(evaluation => {
+          evaluation.ideas.forEach(idea => {
+            if (idea.ltv_cac_ratio) {
+              totalRatio += idea.ltv_cac_ratio;
+              ratioCount++;
+              if (idea.ltv_cac_ratio > 3) {
+                roiMeetingThreshold++;
+              }
+            }
+            if (idea.payback_months) {
+              totalPayback += idea.payback_months;
+              paybackCount++;
+            }
+            if (idea.average_score) {
+              totalScore += idea.average_score;
+              scoreCount++;
+            }
+          });
+        });
+        
+        // Add calculated ROI stats
+        data.overall_stats.average_ltv_cac_ratio = ratioCount > 0 ? totalRatio / ratioCount : undefined;
+        data.overall_stats.ideas_meeting_roi_threshold = roiMeetingThreshold;
+        data.overall_stats.average_payback_months = paybackCount > 0 ? totalPayback / paybackCount : undefined;
+        data.overall_stats.average_score = scoreCount > 0 ? totalScore / scoreCount : undefined;
+      }
+      
       return NextResponse.json(data);
     }
     

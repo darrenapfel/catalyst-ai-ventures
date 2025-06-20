@@ -13,6 +13,9 @@
 
 ### Proposal [filename] ([X] Ideas)
 - **Survivors**: [X]/[Y] ([Z]%)
+- **Average Score**: [X]/10
+- **Ideas Meeting ROI Threshold (LTV/CAC >3)**: [X]/[Y]
+- **Average LTV/CAC Ratio**: [X]x
 - **Borderline Pivots**: [List]
 - **Complete Failures**: [X]
 
@@ -91,15 +94,22 @@ Future proposals must demonstrate:
 ### Idea 1: [Name] - [Tagline]
 
 **🎯 Skeptical Investor**: [Full critique]
+**Score**: [X]/10
 
 **💀 Burned Entrepreneur**: [Full critique]
+**Score**: [X]/10
 
 **👤 Target Customer ([Specific Role])**: [Full critique]
+**Score**: [X]/10
 
 **🔧 Technical Realist**: [Full critique]
+**Score**: [X]/10
 
 **📊 Market Analyst**: [Full critique]
+**Score**: [X]/10
 
+**AVERAGE SCORE**: [X]/10
+**ROI METRICS**: LTV/CAC: [X]x | Payback: [X] months | Margin: [X]%
 **VERDICT: [STRONG_PASS/BORDERLINE_PIVOT/HOPELESS_KILL]** - [Brief reason]
 
 [If BORDERLINE_PIVOT]

@@ -60,6 +60,18 @@ export default function IdeasTable({ ideas, onIdeaClick }: IdeasTableProps) {
         aValue = a.evaluationDate;
         bValue = b.evaluationDate;
         break;
+      case 'ltv_cac_ratio':
+        aValue = a.idea.ltv_cac_ratio || 0;
+        bValue = b.idea.ltv_cac_ratio || 0;
+        break;
+      case 'payback_months':
+        aValue = a.idea.payback_months || 999;
+        bValue = b.idea.payback_months || 999;
+        break;
+      case 'average_score':
+        aValue = a.idea.average_score || 0;
+        bValue = b.idea.average_score || 0;
+        break;
       default:
         return 0;
     }
@@ -98,6 +110,27 @@ export default function IdeasTable({ ideas, onIdeaClick }: IdeasTableProps) {
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Kill Reasons
+              </th>
+              <th
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
+                onClick={() => handleSort('ltv_cac_ratio')}
+              >
+                LTV/CAC {getSortIcon('ltv_cac_ratio')}
+              </th>
+              <th
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
+                onClick={() => handleSort('payback_months')}
+              >
+                Payback {getSortIcon('payback_months')}
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Margin
+              </th>
+              <th
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
+                onClick={() => handleSort('average_score')}
+              >
+                Score {getSortIcon('average_score')}
               </th>
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
@@ -148,6 +181,38 @@ export default function IdeasTable({ ideas, onIdeaClick }: IdeasTableProps) {
                         <span className="text-gray-400">None specified</span>
                       )}
                     </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    {idea.ltv_cac_ratio ? (
+                      <span className={`inline-flex px-2 py-1 text-xs font-medium rounded-full ${
+                        idea.ltv_cac_ratio > 3 ? 'bg-green-100 text-green-800' :
+                        idea.ltv_cac_ratio >= 2 ? 'bg-yellow-100 text-yellow-800' :
+                        'bg-red-100 text-red-800'
+                      }`}>
+                        {idea.ltv_cac_ratio.toFixed(1)}x
+                      </span>
+                    ) : (
+                      <span className="text-gray-400">-</span>
+                    )}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                    {idea.payback_months ? `${idea.payback_months} mo` : '-'}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                    {idea.gross_margin ? `${idea.gross_margin}%` : '-'}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    {idea.average_score ? (
+                      <span className={`text-sm font-medium ${
+                        idea.average_score >= 9 ? 'text-green-600' :
+                        idea.average_score >= 7 ? 'text-yellow-600' :
+                        'text-red-600'
+                      }`}>
+                        {idea.average_score.toFixed(1)}
+                      </span>
+                    ) : (
+                      <span className="text-gray-400">-</span>
+                    )}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                     {evaluationDate}

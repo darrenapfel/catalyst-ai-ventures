@@ -15,6 +15,7 @@ export default function Home() {
   const [filters, setFilters] = useState<FilterState>({
     verdict: 'ALL',
     marketType: 'ALL',
+    roiPerformance: 'ALL',
     search: '',
     proposal: ''
   });
@@ -57,6 +58,14 @@ export default function Home() {
       // Market type filter
       if (filters.marketType !== 'ALL' && idea.market_type !== filters.marketType) {
         return false;
+      }
+
+      // ROI Performance filter
+      if (filters.roiPerformance !== 'ALL') {
+        const ratio = idea.ltv_cac_ratio || 0;
+        if (filters.roiPerformance === 'HIGH' && ratio <= 3) return false;
+        if (filters.roiPerformance === 'MEDIUM' && (ratio < 2 || ratio > 3)) return false;
+        if (filters.roiPerformance === 'LOW' && ratio >= 2) return false;
       }
 
       // Proposal file filter
